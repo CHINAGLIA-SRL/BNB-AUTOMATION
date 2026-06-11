@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Chinaglia SRL — Automazioni su misura per strutture ricettive</title>
+<meta name="description" content="Automatizziamo il lavoro manuale della tua struttura ricettiva senza farti cambiare gestionale. Analisi gratuita dei processi e automazioni su misura per hotel, B&B, Airbnb e affittacamere." />
+<meta name="theme-color" content="#0E1B2A" />
+<meta name="robots" content="index, follow" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:site_name" content="Chinaglia SRL" />
+<meta property="og:title" content="Automatizziamo il lavoro manuale della tua struttura ricettiva — senza cambiare gestionale" />
+<meta property="og:description" content="Analizziamo come lavori e costruiamo automazioni su misura attorno agli strumenti che usi già. Prima chiamata e analisi dei processi gratuite." />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-hero-variant="diagramma" data-accent="teal" data-density="regular" data-headfont="grotesk" data-images="on" data-mobilecta="on">
+
+<!-- ============== ICON SPRITE ============== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="flowgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#45c9bf"/><stop offset="1" stop-color="#C6922B"/>
+    </linearGradient>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .56 3.5 1 1 0 0 1-.25 1z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 8.4c-.2 0-.5 0-.7.3-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.8 4.3 3.8 2.1.8 2.6.7 3 .6.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.7-.4c-.4-.2-1.4-.7-1.6-.8-.2 0-.4-.1-.5.1l-.7.9c-.1.1-.2.2-.5 0-.6-.3-1.3-.6-2.2-1.5-.6-.6-1-1.3-1.2-1.5-.1-.2 0-.4.1-.5l.4-.5c.1-.1.1-.2.2-.4 0-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.6-.4z" fill="currentColor"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M3.5 9.5h17M8 3v3.5M16 3v3.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sync" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8M20 4v4h-4M20 12a8 8 0 0 1-13.7 5.6L4 16M4 20v-4h4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-sheet" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M4 9h16M4 15h16M10 3v18" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M3 20a6 6 0 0 1 12 0M16 5.2a3.2 3.2 0 0 1 0 6M18 20a6 6 0 0 0-3-5.2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-clip" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M9 4a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 4v.5H9zM8.5 11h7M8.5 15h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="m16.5 16.5 4 4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-hotel" viewBox="0 0 24 24"><path d="M3 21h18M5 21V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v17M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-4h4v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M14 3v5h5M9 13h6M9 17h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h12M8 12h12M8 18h12M3.5 6h.01M3.5 12h.01M3.5 18h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M20 20H4M8 17v-5M12 17V8M16 17v-3" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M9 7H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v2a2 2 0 0 1-2 2H4m15-11h-4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v2a2 2 0 0 1-2 2h-1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.9"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a4 4 0 0 0 5.6 0l3-3a4 4 0 0 0-5.6-5.6l-1.5 1.5M14 11a4 4 0 0 0-5.6 0l-3 3A4 4 0 0 0 11 19.6L12.5 18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============== HEADER ============== -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="Chinaglia SRL — home">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="37" height="37" rx="11" fill="#0E1B2A"/>
+        <rect x="1.5" y="1.5" width="37" height="37" rx="11" stroke="#1F7A7A" stroke-width="1.3"/>
+        <circle cx="20" cy="20" r="5.4" fill="#1F7A7A"/>
+        <circle cx="9.6" cy="13" r="2.5" fill="#C6922B"/>
+        <circle cx="9.6" cy="27" r="2.5" fill="#7FE0D8"/>
+        <circle cx="30.4" cy="13" r="2.5" fill="#7FE0D8"/>
+        <circle cx="30.4" cy="27" r="2.5" fill="#C6922B"/>
+        <path d="M12 13.6 15.6 18M12 26.4 15.6 22M28 13.6 24.4 18M28 26.4 24.4 22" stroke="#5d7d86" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">Chinaglia<span style="color:var(--teal)"> SRL</span></span>
+        <span class="brand-sub">Automazioni su misura</span>
+      </span>
+    </a>
+    <nav class="nav-desktop" aria-label="Navigazione principale">
+      <a href="#problema">Problema</a>
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#automazioni">Cosa automatizziamo</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#contatti" class="btn btn-secondary btn-call-header">Parla con noi</a>
+      <a href="#contatti" class="btn btn-primary">Prenota una chiamata gratuita</a>
+      <button class="hamburger" id="hamburger" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <svg aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="scrim" data-close></div>
+  <div class="mobile-panel">
+    <div class="drawer-top">
+      <span class="brand-name" style="font-family:var(--font-display);font-size:1.1rem">Chinaglia <span style="color:var(--teal)">SRL</span></span>
+      <button class="drawer-close" data-close aria-label="Chiudi il menu"><svg aria-hidden="true" style="width:22px;height:22px"><use href="#i-x"/></svg></button>
+    </div>
+    <a href="#problema" class="m-link" data-close>Problema</a>
+    <a href="#come-funziona" class="m-link" data-close>Come funziona</a>
+    <a href="#automazioni" class="m-link" data-close>Cosa automatizziamo</a>
+    <a href="#vantaggi" class="m-link" data-close>Vantaggi</a>
+    <a href="#faq" class="m-link" data-close>FAQ</a>
+    <a href="#contatti" class="btn btn-primary" data-close>Prenota una chiamata gratuita</a>
+  </div>
+</div>
+
+<!-- ============== HERO ============== -->
+<section class="hero bg-navy on-dark" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="trust-badge reveal"><span class="dot"></span> Automazioni su misura per strutture ricettive in Italia</span>
+        <h1 id="hero-title" class="reveal d1">Hai un hotel, un B&amp;B o un Airbnb? <span class="hl">Automatizziamo il lavoro manuale</span> senza farti cambiare gestionale.</h1>
+        <p class="hero-sub reveal d2">Analizziamo il tuo modo attuale di lavorare, individuiamo tutte le attività ripetitive e costruiamo automazioni su misura che le eseguono al posto tuo.</p>
+        <ul class="hero-bullets reveal d2">
+          <li><span class="tick"><svg aria-hidden="true"><use href="#i-check"/></svg></span> Nessun cambio di gestionale</li>
+          <li><span class="tick"><svg aria-hidden="true"><use href="#i-check"/></svg></span> Analisi gratuita dei processi</li>
+          <li><span class="tick"><svg aria-hidden="true"><use href="#i-check"/></svg></span> Automazioni create attorno al tuo modo di lavorare</li>
+          <li><span class="tick"><svg aria-hidden="true"><use href="#i-check"/></svg></span> Meno attività manuali, meno errori, più tempo libero</li>
+        </ul>
+        <div class="hero-cta reveal d3">
+          <a href="#contatti" class="btn btn-primary">Prenota una chiamata gratuita</a>
+          <a href="#automazioni" class="btn btn-secondary">Scopri cosa possiamo automatizzare</a>
+        </div>
+        <p class="hero-micro reveal d3"><svg aria-hidden="true"><use href="#i-shield"/></svg> Prima chiamata gratuita. Ti spieghiamo cosa è possibile automatizzare nella tua struttura, senza impegno.</p>
+      </div>
+
+      <div class="hero-visual reveal d2">
+        <!-- VARIANT 1: operational diagram -->
+        <div class="hero-variant hv-diagramma">
+          <div class="diagram">
+            <div class="diagram-caption">
+              <span class="lbl">Colleghiamo ciò che usi già</span>
+              <span class="live-pill"><span class="ping"></span> Automazione attiva</span>
+            </div>
+            <div class="diagram-stage" id="diagram-stage">
+              <svg class="connector-svg" id="connector-svg" aria-hidden="true"></svg>
+              <div class="col-sources">
+                <span class="group-label">I tuoi strumenti</span>
+                <div class="node" data-node="s"><span class="ic" style="color:#4a8bff"><svg><use href="#i-cal"/></svg></span> Booking</div>
+                <div class="node" data-node="s"><span class="ic" style="color:#ff6f7d"><svg><use href="#i-hotel"/></svg></span> Airbnb</div>
+                <div class="node" data-node="s"><span class="ic" style="color:#7fe0d8"><svg><use href="#i-mail"/></svg></span> Email</div>
+                <div class="node" data-node="s"><span class="ic" style="color:#54c08a"><svg><use href="#i-wa"/></svg></span> WhatsApp</div>
+                <div class="node" data-node="s"><span class="ic" style="color:#c6b04a"><svg><use href="#i-sheet"/></svg></span> Excel / PMS</div>
+              </div>
+              <div class="col-hub">
+                <div class="hub" data-node="h">
+                  <svg class="hub-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                    <circle cx="20" cy="20" r="13" stroke="#fff" stroke-width="1.6" opacity=".5"/>
+                    <circle cx="20" cy="20" r="6" fill="#fff"/>
+                    <circle cx="20" cy="7" r="2.4" fill="#C6922B"/><circle cx="20" cy="33" r="2.4" fill="#C6922B"/>
+                    <circle cx="7" cy="20" r="2.4" fill="#fff"/><circle cx="33" cy="20" r="2.4" fill="#fff"/>
+                  </svg>
+                  <strong>Chinaglia SRL</strong>
+                  <span>Automation Layer</span>
+                </div>
+              </div>
+              <div class="col-outputs">
+                <span class="group-label">Eseguito in automatico</span>
+                <div class="node" data-node="o"><span class="ic" style="color:#7fe0d8"><svg><use href="#i-msg"/></svg></span> Messaggi ospiti</div>
+                <div class="node" data-node="o"><span class="ic" style="color:#c6b04a"><svg><use href="#i-sync"/></svg></span> File aggiornati</div>
+                <div class="node" data-node="o"><span class="ic" style="color:#7fe0d8"><svg><use href="#i-bell"/></svg></span> Reminder</div>
+                <div class="node" data-node="o"><span class="ic" style="color:#54c08a"><svg><use href="#i-clip"/></svg></span> Check-in</div>
+                <div class="node" data-node="o"><span class="ic" style="color:#c6b04a"><svg><use href="#i-users"/></svg></span> Notifiche al team</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VARIANT 2: hospitality photo + workflow overlay -->
+        <div class="hero-variant hv-hospitality">
+          <div class="media media-overlay">
+            <img data-img="heroHospitality" alt="Receptionist di un boutique hotel italiano accoglie un ospite alla reception" loading="eager" />
+            <div class="ph"><span>Foto reception / hotel manager italiano<code>reception boutique hotel italy</code></span></div>
+            <span class="ov-chip c1"><svg><use href="#i-link"/></svg> Strumenti collegati</span>
+            <span class="ov-chip c2"><svg><use href="#i-bolt"/></svg> Task automatici</span>
+            <div class="ov-flow">
+              <span class="fl"><span class="d"></span> Messaggio pre-arrivo inviato</span>
+              <span class="fl"><span class="d"></span> Calendario camere aggiornato</span>
+            </div>
+            <div class="media-float f1"><span class="mf-ic"><svg><use href="#i-msg"/></svg></span><div><strong>Check-in inviato</strong><small>3 ospiti, automatico</small></div></div>
+            <div class="media-float f2"><span class="mf-ic"><svg><use href="#i-clock"/></svg></span><div><strong>4h risparmiate</strong><small>questa settimana</small></div></div>
+          </div>
+        </div>
+
+        <!-- VARIANT 3: dashboard / automation map -->
+        <div class="hero-variant hv-dashboard">
+          <div class="dash">
+            <div class="dash-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="dtitle">Pannello operativo — La tua struttura</span>
+              <span class="dlive"><span class="ping"></span> LIVE</span>
+            </div>
+            <div class="dash-body">
+              <div class="dash-stats">
+                <div class="dash-stat"><div class="v">11<small>h</small></div><div class="k">Tempo risparmiato / settimana</div></div>
+                <div class="dash-stat"><div class="v">87<small>%</small></div><div class="k">Attività manuali eliminate</div></div>
+                <div class="dash-stat"><div class="v">0</div><div class="k">Errori da copia/incolla</div></div>
+              </div>
+              <div class="dash-panel">
+                <div class="ph-title">Attività automatizzate <span class="tag">Oggi</span></div>
+                <div class="dash-row"><span class="rico"><svg><use href="#i-msg"/></svg></span><span class="rmain"><strong>Istruzioni check-in inviate</strong><span>Ospite — arrivo 15:00</span></span><span class="rstate done"><span class="d"></span>Fatto</span></div>
+                <div class="dash-row"><span class="rico"><svg><use href="#i-sync"/></svg></span><span class="rmain"><strong>Dati prenotazione sincronizzati</strong><span>Booking → foglio interno</span></span><span class="rstate done"><span class="d"></span>Fatto</span></div>
+                <div class="dash-row"><span class="rico"><svg><use href="#i-bell"/></svg></span><span class="rmain"><strong>Reminder documenti</strong><span>2 ospiti in attesa</span></span><span class="rstate auto"><span class="d"></span>Auto</span></div>
+              </div>
+              <div class="dash-panel">
+                <div class="ph-title">Operazioni del giorno completate</div>
+                <div class="dash-progress"><i style="width:78%"></i></div>
+                <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:.74rem;color:var(--ink-mute);font-weight:600"><span>18 / 23 attività automatiche</span><span style="color:var(--teal)">+78%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROBLEM ============== -->
+<section class="bg-cream" id="problema" aria-labelledby="problema-title">
+  <div class="container">
+    <div class="split intro-split">
+      <div class="section-head reveal" style="max-width:none">
+        <span class="eyebrow">Il vero problema</span>
+        <h2 id="problema-title">Il problema non è il gestionale. È tutto quello che fai ancora a mano attorno al gestionale.</h2>
+        <p>La maggior parte delle strutture ha già un software, ma continua a perdere tempo ogni giorno: copia dati, controlla messaggi, chiede agli ospiti le informazioni mancanti, aggiorna file, coordina i check-in e ripete sempre gli stessi passaggi operativi.</p>
+      </div>
+      <div class="split-media reveal d1">
+        <div class="collage">
+          <div class="media soft c-main">
+            <img data-img="problemMain" alt="Receptionist di una struttura ricettiva gestisce manualmente prenotazioni, telefonate e documenti alla reception" loading="lazy" />
+            <div class="ph"><span>Reception: lavoro manuale quotidiano<code>hotel receptionist front desk work</code></span></div>
+            <span class="img-chip m1"><svg aria-hidden="true"><use href="#i-copy"/></svg> Dati copiati a mano</span>
+            <span class="img-chip m2"><svg aria-hidden="true"><use href="#i-msg"/></svg> Messaggi ripetuti ogni giorno</span>
+          </div>
+          <div class="media soft c-sub">
+            <img data-img="problemSub" alt="Titolare di un B&amp;B aggiorna fogli di calcolo e calendari tra più strumenti diversi" loading="lazy" />
+            <div class="ph"><span>Più strumenti, tutto a mano<code>laptop spreadsheet desk work</code></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid cols-3">
+      <div class="card task-card reveal"><span class="tnum">01</span><p>Copi dati da una piattaforma all'altra</p></div>
+      <div class="card task-card reveal d1"><span class="tnum">02</span><p>Invii sempre gli stessi messaggi agli ospiti</p></div>
+      <div class="card task-card reveal d2"><span class="tnum">03</span><p>Rincorri documenti, orari di arrivo e informazioni mancanti</p></div>
+      <div class="card task-card reveal"><span class="tnum">04</span><p>Aggiorni fogli Excel, calendari o file interni</p></div>
+      <div class="card task-card reveal d1"><span class="tnum">05</span><p>Controlli manualmente prenotazioni e modifiche</p></div>
+      <div class="card task-card reveal d2"><span class="tnum">06</span><p>Il team perde tempo in operazioni ripetitive</p></div>
+    </div>
+    <div class="reveal" style="margin-top:36px">
+      <a href="#contatti" class="btn btn-primary">Voglio capire cosa posso automatizzare</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== POSITIONING / DIFFERENTIATION ============== -->
+<section class="bg-petrol on-dark" id="differenza" aria-labelledby="diff-title">
+  <div class="container">
+    <div class="split media-first intro-split">
+      <div class="split-media reveal">
+        <div class="media diff-media media-overlay">
+          <img data-img="positioning" alt="Scrivania di una struttura ricettiva con gestionale aperto sul portatile, telefono, agenda e documenti: gli strumenti ci sono, ma il lavoro resta manuale" loading="lazy" />
+          <div class="ph"><span>Gestionale aperto + lavoro manuale<code>hotel desk laptop phone paperwork</code></span></div>
+          <span class="img-chip"><svg aria-hidden="true"><use href="#i-link"/></svg> Software presente, passaggi ancora a mano</span>
+        </div>
+      </div>
+      <div class="section-head reveal d1" style="max-width:none">
+        <span class="eyebrow">La differenza</span>
+        <h2 id="diff-title">Non ti vendiamo un nuovo gestionale. Automatizziamo quello che fai già oggi.</h2>
+        <p>Hai già un PMS, un channel manager, Booking, Airbnb, Excel, WhatsApp o email? Non è un problema. È esattamente da lì che partiamo. Costruiamo automazioni su misura attorno ai tuoi sistemi attuali, così non devi cambiare da un giorno all'altro il modo in cui lavori.</p>
+      </div>
+    </div>
+    <div class="compare">
+      <div class="compare-card compare-std reveal">
+        <h3><span class="badge-tag">Software standard</span></h3>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-x"/></svg> Ti obbliga ad adattarti al suo metodo</li>
+          <li><svg aria-hidden="true"><use href="#i-x"/></svg> Copre solo una parte del lavoro</li>
+          <li><svg aria-hidden="true"><use href="#i-x"/></svg> Spesso lascia attività manuali fuori dal sistema</li>
+          <li><svg aria-hidden="true"><use href="#i-x"/></svg> Richiede formazione e cambiamento interno</li>
+        </ul>
+      </div>
+      <div class="compare-card compare-us reveal d1">
+        <h3>Automazione su misura <span class="badge-tag">Chinaglia SRL</span></h3>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Parte dal tuo metodo attuale</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Collega strumenti e passaggi già esistenti</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Riduce le operazioni manuali attorno al gestionale</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Viene progettata sulle tue procedure reali</li>
+        </ul>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top:36px">
+      <a href="#contatti" class="btn btn-primary">Prenota una consulenza gratuita</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== HOW IT WORKS ============== -->
+<section class="bg-lightteal" id="come-funziona" aria-labelledby="how-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Come funziona</span>
+      <h2 id="how-title">Partiamo dal tuo lavoro reale, non da una soluzione preconfezionata.</h2>
+    </div>
+    <div class="media process-banner media-overlay reveal d1">
+      <img data-img="process" alt="Consulente Chinaglia SRL e titolare di una struttura ricettiva analizzano insieme il flusso di lavoro durante l'audit dei processi" loading="lazy" />
+      <div class="ph"><span>Audit dei processi insieme al titolare<code>hospitality business consultation meeting</code></span></div>
+      <span class="img-chip"><svg aria-hidden="true"><use href="#i-search"/></svg> Guardiamo come lavori davvero, passo dopo passo</span>
+    </div>
+    <div class="steps">
+      <div class="step free reveal">
+        <div class="step-no"><span class="num">1</span> Step 01</div>
+        <h3>Chiamata gratuita</h3>
+        <p>Ci racconti come gestisci oggi prenotazioni, ospiti, check-in, messaggi, file, documenti e operazioni interne. Ti spieghiamo subito quali aree potrebbero essere automatizzate.</p>
+        <a href="#contatti" class="btn-ghost step-link">Richiedi la chiamata <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="step free reveal d1">
+        <div class="step-no"><span class="num">2</span> Step 02</div>
+        <h3>Audit dei processi</h3>
+        <p>Se ha senso proseguire, veniamo di persona o analizziamo da remoto il tuo flusso di lavoro. Guardiamo cosa fate davvero ogni giorno, passo dopo passo.</p>
+      </div>
+      <div class="step reveal d2">
+        <div class="step-no"><span class="num">3</span> Step 03</div>
+        <h3>Mappa delle attività manuali</h3>
+        <p>Creiamo insieme una lista chiara di attività ripetitive, colli di bottiglia, errori ricorrenti e passaggi che possono essere automatizzati.</p>
+      </div>
+      <div class="step reveal d3">
+        <div class="step-no"><span class="num">4</span> Step 04</div>
+        <h3>Automazione su misura</h3>
+        <p>Sviluppiamo una soluzione software personalizzata che esegue automaticamente quelle attività, integrandosi con il modo in cui lavori già.</p>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top:36px">
+      <a href="#contatti" class="btn btn-primary">Voglio fare l'audit gratuito</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== WHAT WE AUTOMATE ============== -->
+<section class="bg-white" id="automazioni" aria-labelledby="auto-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Cosa automatizziamo</span>
+      <h2 id="auto-title">Cosa possiamo automatizzare nella tua struttura?</h2>
+    </div>
+    <div class="grid cols-2">
+      <div class="card auto-card reveal">
+        <span class="icon-box"><svg aria-hidden="true"><use href="#i-sync"/></svg></span>
+        <h3>Prenotazioni e dati ospiti</h3>
+        <ul class="auto-list">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Recupero e organizzazione dati prenotazione</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Raccolta delle informazioni mancanti</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Aggiornamento dei file interni</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Sincronizzazione dei dati tra strumenti</li>
+        </ul>
+      </div>
+      <div class="card auto-card reveal d1">
+        <span class="icon-box"><svg aria-hidden="true"><use href="#i-msg"/></svg></span>
+        <h3>Comunicazioni con gli ospiti</h3>
+        <ul class="auto-list">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Messaggi automatici prima dell'arrivo</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Istruzioni di check-in</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Reminder per documenti o orari</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Risposte standard alle domande frequenti</li>
+        </ul>
+      </div>
+      <div class="card auto-card reveal">
+        <span class="icon-box"><svg aria-hidden="true"><use href="#i-clip"/></svg></span>
+        <h3>Operazioni interne</h3>
+        <ul class="auto-list">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Calendario camere</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Aggiornamento dello stato prenotazioni</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Notifiche al team</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Liste operative per check-in, pulizie, arrivi e partenze</li>
+        </ul>
+      </div>
+      <div class="card auto-card reveal d1">
+        <span class="icon-box"><svg aria-hidden="true"><use href="#i-chart"/></svg></span>
+        <h3>Amministrazione e controllo</h3>
+        <ul class="auto-list">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Preparazione dei dati</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Report interni</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Controllo delle informazioni mancanti</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg> Riduzione degli errori da copia/incolla</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note-band reveal">
+      <svg aria-hidden="true"><use href="#i-spark"/></svg>
+      <p>Ogni struttura lavora in modo diverso. Per questo non proponiamo un pacchetto standard: prima analizziamo il tuo flusso, poi costruiamo la soluzione.</p>
+    </div>
+    <div class="reveal" style="margin-top:32px">
+      <a href="#contatti" class="btn btn-primary">Parliamo della mia struttura</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== BENEFITS ============== -->
+<section class="bg-cream" id="vantaggi" aria-labelledby="ben-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">I vantaggi</span>
+      <h2 id="ben-title">Cosa cambia per te?</h2>
+    </div>
+    <div class="grid cols-3">
+      <div class="card benefit reveal"><span class="icon-box"><svg aria-hidden="true"><use href="#i-clock"/></svg></span><h3>Meno tempo perso ogni giorno</h3></div>
+      <div class="card benefit reveal d1"><span class="icon-box"><svg aria-hidden="true"><use href="#i-check"/></svg></span><h3>Meno errori di copia e dimenticanze</h3></div>
+      <div class="card benefit reveal d2"><span class="icon-box"><svg aria-hidden="true"><use href="#i-bolt"/></svg></span><h3>Meno dipendenza da attività manuali</h3></div>
+      <div class="card benefit reveal"><span class="icon-box"><svg aria-hidden="true"><use href="#i-msg"/></svg></span><h3>Ospiti seguiti con messaggi più puntuali</h3></div>
+      <div class="card benefit reveal d1"><span class="icon-box"><svg aria-hidden="true"><use href="#i-list"/></svg></span><h3>Processi più chiari per il team</h3></div>
+      <div class="card benefit reveal d2"><span class="icon-box"><svg aria-hidden="true"><use href="#i-shield"/></svg></span><h3>Nessuna rivoluzione interna obbligatoria</h3></div>
+    </div>
+    <div class="benefit-quote reveal">
+      <svg aria-hidden="true"><use href="#i-quote"/></svg>
+      <p>L'obiettivo è semplice: togliere dal tuo tavolo tutte le attività ripetitive che non richiedono davvero una decisione umana.</p>
+    </div>
+    <div class="reveal" style="margin-top:32px">
+      <a href="#contatti" class="btn btn-primary">Prenota la chiamata gratuita</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FAQ ============== -->
+<section class="bg-white" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Dubbi frequenti</span>
+      <h2 id="faq-title">Domande che probabilmente ti stai facendo</h2>
+    </div>
+    <div class="faq-wrap" id="faq-wrap">
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Ho già un gestionale. Mi serve comunque? <span class="chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span></button>
+        <div class="faq-a"><div><p>Sì. Il punto non è sostituire il tuo gestionale. Il punto è automatizzare tutto ciò che oggi fai ancora manualmente attorno al gestionale: messaggi, file, controlli, passaggi ripetitivi, raccolta dati, aggiornamenti e comunicazioni.</p></div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Devo cambiare software? <span class="chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span></button>
+        <div class="faq-a"><div><p>No. Partiamo dagli strumenti che usi già. Se qualcosa può essere collegato, integrato o automatizzato, lo valutiamo. Il nostro lavoro è adattare l'automazione al tuo flusso, non obbligarti a cambiare tutto.</p></div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Sembra troppo bello per essere vero. Dov'è il trucco? <span class="chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span></button>
+        <div class="faq-a"><div><p>Non è magia e non è una soluzione universale. È analisi dei processi più sviluppo software su misura. Alcune attività si possono automatizzare completamente, altre solo in parte. Per questo facciamo prima una chiamata e un audit: per capire cosa è davvero possibile nel tuo caso.</p></div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Quanto costa? <span class="chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span></button>
+        <div class="faq-a"><div><p>Dipende dalla complessità del flusso e dalle automazioni richieste. La prima chiamata e l'analisi iniziale servono proprio a capire quali processi conviene automatizzare e quale impatto possono avere sul tuo lavoro quotidiano.</p></div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">È adatto anche a piccole strutture? <span class="chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span></button>
+        <div class="faq-a"><div><p>Sì, soprattutto se anche una struttura piccola perde molte ore in attività ripetitive. Hotel, affittacamere, B&amp;B, Airbnb e property manager possono beneficiare dell'automazione se hanno processi manuali ripetuti ogni giorno o ogni settimana.</p></div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Il mio modo di lavorare è particolare. Potete adattarvi? <span class="chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span></button>
+        <div class="faq-a"><div><p>Sì. È esattamente il motivo per cui non vendiamo un pacchetto standard. Prima osserviamo il tuo metodo reale, poi costruiamo una soluzione su misura.</p></div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Cosa succede nella prima chiamata? <span class="chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span></button>
+        <div class="faq-a"><div><p>Ti facciamo alcune domande pratiche su prenotazioni, ospiti, check-in, messaggi, documenti, file e strumenti usati. Poi ti spieghiamo quali aree potrebbero essere automatizzate e se ha senso fare un audit più approfondito.</p></div></div>
+      </div>
+    </div>
+    <div class="reveal" style="text-align:center;margin-top:36px">
+      <a href="#contatti" class="btn btn-primary">Prenota una chiamata e chiarisci ogni dubbio</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TRUST / LOCAL ============== -->
+<section class="bg-navy on-dark" id="approccio" aria-labelledby="trust-title">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="reveal">
+        <span class="eyebrow">Il nostro approccio</span>
+        <h2 id="trust-title" style="margin-top:16px;font-size:clamp(1.85rem,3.6vw,2.7rem)">Un approccio concreto, locale e su misura.</h2>
+        <p style="margin-top:18px;font-size:1.12rem">Chinaglia SRL lavora con un approccio pratico: niente soluzioni astratte, niente cambiamenti inutili, niente software imposto. Guardiamo come funziona davvero la tua struttura e costruiamo automazioni che risolvono problemi concreti.</p>
+        <ul class="trust-points">
+          <li><span class="tick"><svg aria-hidden="true"><use href="#i-check"/></svg></span> Analisi gratuita iniziale</li>
+          <li><span class="tick"><svg aria-hidden="true"><use href="#i-check"/></svg></span> Possibilità di audit di persona</li>
+          <li><span class="tick"><svg aria-hidden="true"><use href="#i-check"/></svg></span> Soluzioni su misura</li>
+          <li><span class="tick"><svg aria-hidden="true"><use href="#i-check"/></svg></span> Approccio orientato ai processi reali</li>
+          <li><span class="tick"><svg aria-hidden="true"><use href="#i-check"/></svg></span> Focus su tempo risparmiato ed errori ridotti</li>
+        </ul>
+        <a href="#contatti" class="btn btn-primary" style="margin-top:30px">Richiedi un'analisi gratuita</a>
+      </div>
+      <div class="reveal d1">
+        <div class="media media-overlay" style="aspect-ratio:4/3">
+          <img data-img="trust" alt="Camera di una struttura ricettiva italiana, ordinata e pronta per gli ospiti" loading="lazy" />
+          <div class="ph"><span>Foto titolare struttura sereno / operazioni organizzate<code>hotel owner reception calm italy</code></span></div>
+          <div class="media-float f2" style="bottom:20px;left:20px;right:auto"><span class="mf-ic"><svg><use href="#i-pin"/></svg></span><div><strong>Approccio locale</strong><small>su misura sul tuo metodo</small></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CONTACT / FINAL CTA ============== -->
+<section class="bg-cream" id="contatti" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-aside reveal">
+        <div class="media aside-media soft media-overlay">
+          <img data-img="contact" alt="Reception accogliente di un boutique hotel italiano, ambiente professionale e ordinato" loading="lazy" />
+          <div class="ph"><span>Reception boutique hotel, ambiente curato<code>boutique hotel reception italy</code></span></div>
+          <span class="img-chip"><svg aria-hidden="true"><use href="#i-shield"/></svg> Ti spieghiamo tutto, di persona o da remoto</span>
+        </div>
+        <span class="eyebrow">Prenota ora</span>
+        <h2 id="contact-title" style="margin-top:16px;font-size:clamp(1.8rem,3.4vw,2.5rem)">Vuoi capire cosa puoi automatizzare nella tua struttura?</h2>
+        <p style="margin-top:18px;font-size:1.1rem;color:var(--ink-soft)">Compila il modulo. Ti richiamiamo per una prima consulenza gratuita, ti spieghiamo cosa possiamo fare e rispondiamo a tutte le tue domande.</p>
+        <div class="reassure">
+          <svg aria-hidden="true"><use href="#i-shield"/></svg>
+          <p>Prima ti spieghiamo tutto. Poi, se ha senso, analizziamo i tuoi processi e ti proponiamo una soluzione su misura.</p>
+        </div>
+        <div class="contact-list">
+          <a href="#" data-link="calendly"><span class="ci"><svg aria-hidden="true"><use href="#i-cal"/></svg></span><span>Fissa un appuntamento online<small>Scegli tu giorno e orario</small></span></a>
+          <a href="#" data-link="phone"><span class="ci"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><span><span data-cfg="phone">+39 XXX XXX XXXX</span><small>Telefono</small></span></a>
+          <a href="#" data-link="whatsapp"><span class="ci"><svg aria-hidden="true"><use href="#i-wa"/></svg></span><span><span data-cfg="whatsapp">+39 XXX XXX XXXX</span><small>WhatsApp</small></span></a>
+          <a href="#" data-link="email"><span class="ci"><svg aria-hidden="true"><use href="#i-mail"/></svg></span><span><span data-cfg="email">info@chinagliasrl.it</span><small>Email</small></span></a>
+        </div>
+      </div>
+
+      <div class="form-card reveal d1" id="form-card">
+        <form class="form-body" id="lead-form" novalidate>
+          <div class="form-row two">
+            <div class="field">
+              <label for="f-nome">Nome e cognome</label>
+              <input type="text" id="f-nome" name="nome" autocomplete="name" required placeholder="Mario Rossi" />
+              <span class="err">Inserisci il tuo nome.</span>
+            </div>
+            <div class="field">
+              <label for="f-struttura">Nome struttura</label>
+              <input type="text" id="f-struttura" name="struttura" required placeholder="Hotel Bellavista" />
+              <span class="err">Inserisci il nome della struttura.</span>
+            </div>
+          </div>
+          <div class="form-row two">
+            <div class="field">
+              <label for="f-tipo">Tipo struttura</label>
+              <select id="f-tipo" name="tipo_struttura" required>
+                <option value="" disabled selected>Seleziona…</option>
+                <option>Hotel</option>
+                <option>B&amp;B</option>
+                <option>Airbnb</option>
+                <option>Affittacamere</option>
+                <option>Property manager</option>
+                <option>Altro</option>
+              </select>
+              <span class="err">Seleziona il tipo di struttura.</span>
+            </div>
+            <div class="field">
+              <label for="f-citta">Città</label>
+              <input type="text" id="f-citta" name="citta" autocomplete="address-level2" required placeholder="Verona" />
+              <span class="err">Inserisci la città.</span>
+            </div>
+          </div>
+          <div class="form-row two">
+            <div class="field">
+              <label for="f-tel">Telefono</label>
+              <input type="tel" id="f-tel" name="telefono" autocomplete="tel" required placeholder="+39 333 1234567" />
+              <span class="err">Inserisci un recapito telefonico.</span>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" name="email" autocomplete="email" required placeholder="mario@hotelbellavista.it" />
+              <span class="err">Inserisci un'email valida.</span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-tools">Che gestionale o strumenti usi oggi? <span class="opt">(facoltativo)</span></label>
+            <input type="text" id="f-tools" name="strumenti" placeholder="Es. Booking, Airbnb, Excel, un PMS, WhatsApp…" />
+          </div>
+          <div class="field">
+            <label for="f-pain">Qual è l'attività manuale che ti fa perdere più tempo? <span class="opt">(facoltativo)</span></label>
+            <textarea id="f-pain" name="attivita_manuale" placeholder="Es. ogni giorno copio i dati delle prenotazioni e invio le istruzioni di check-in a mano…"></textarea>
+          </div>
+          <div class="field">
+            <label for="f-fascia">Fascia oraria preferita per essere ricontattato</label>
+            <select id="f-fascia" name="fascia_oraria" required>
+              <option value="" disabled selected>Seleziona…</option>
+              <option>Mattina (9:00 – 12:00)</option>
+              <option>Pranzo (12:00 – 14:00)</option>
+              <option>Pomeriggio (14:00 – 18:00)</option>
+              <option>Sera (18:00 – 20:00)</option>
+              <option>Indifferente</option>
+            </select>
+            <span class="err">Seleziona una fascia oraria.</span>
+          </div>
+          <div class="field" id="form-error" style="display:none">
+            <p style="color:#c0473f;font-weight:600;margin:0">Si è verificato un errore. Riprova oppure contattaci direttamente.</p>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Richiedi la chiamata gratuita</button>
+          <p class="form-micro"><svg aria-hidden="true"><use href="#i-shield"/></svg> Nessun impegno. Ti richiamiamo per capire se e cosa ha senso automatizzare nella tua struttura.</p>
+        </form>
+        <div class="form-success" role="status" aria-live="polite">
+          <div class="ok"><svg aria-hidden="true"><use href="#i-check"/></svg></div>
+          <h3>Richiesta inviata</h3>
+          <p>Grazie, abbiamo ricevuto la tua richiesta. Ti ricontatteremo al più presto per una prima chiamata gratuita.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-text">
+          <span class="brand-name" style="font-family:var(--font-display);font-size:1.3rem;font-weight:700">Chinaglia <span style="color:var(--teal)">SRL</span></span>
+          <span class="brand-sub">Automazioni su misura</span>
+        </span>
+        <p>Automazioni software su misura per strutture ricettive: hotel, B&amp;B, Airbnb, affittacamere e property manager in Italia.</p>
+        <a href="#contatti" class="btn btn-primary">Prenota una chiamata gratuita</a>
+      </div>
+      <div class="footer-col">
+        <h4>Naviga</h4>
+        <a href="#problema">Problema</a>
+        <a href="#come-funziona">Come funziona</a>
+        <a href="#automazioni">Cosa automatizziamo</a>
+        <a href="#vantaggi">Vantaggi</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <a href="#" data-link="phone" data-cfg="phone">+39 XXX XXX XXXX</a>
+        <a href="#" data-link="whatsapp">WhatsApp</a>
+        <a href="#" data-link="email" data-cfg="email">info@chinagliasrl.it</a>
+        <a href="#" data-link="calendly">Fissa un appuntamento</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Chinaglia SRL — P.IVA 00000000000. Tutti i diritti riservati.</span>
+      <span class="legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#contatti">Contatti</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============== MOBILE STICKY CTA ============== -->
+<div class="mobile-cta" id="mobile-cta">
+  <a href="#contatti" class="btn btn-primary">Prenota una chiamata gratuita</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
