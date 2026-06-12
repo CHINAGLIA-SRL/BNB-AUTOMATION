@@ -4,7 +4,6 @@
   "trailingSlash": false,
   "headers": [
     {
-      "comment": "Filenames are not content-hashed, so never cache them hard — always revalidate so updates show immediately after a redeploy.",
       "source": "/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
