@@ -603,7 +603,7 @@ section { padding-block: var(--section-pad); position: relative; }
    RESPONSIVE
    ========================================================================== */
 @media (max-width: 1080px) {
-  .hero-grid { grid-template-columns: 1fr; }
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
   .hero-visual { order: 2; }
   .cols-4 { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
@@ -618,6 +618,7 @@ section { padding-block: var(--section-pad); position: relative; }
 
 @media (max-width: 760px) {
   body { font-size: 16px; }
+  .btn { white-space: normal; text-align: center; }
   .cols-2, .cols-3, .cols-4 { grid-template-columns: 1fr; }
   .compare { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
@@ -633,7 +634,20 @@ section { padding-block: var(--section-pad); position: relative; }
 
 @media (max-width: 760px) {
   .diagram { min-height: 0; padding: 18px; }
-  .diagram-stage { gap: 10px; }
+  /* stack the operational diagram vertically: tools → hub → automatic tasks */
+  .diagram-stage { grid-template-columns: 1fr; gap: 12px; }
+  .diagram-stage .connector-svg { display: none; }
+  .col-sources, .col-outputs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .col-sources .group-label, .col-outputs .group-label { grid-column: 1 / -1; margin-bottom: 0; }
+  .col-hub { padding: 2px 0; position: relative; }
+  .col-sources::after, .col-hub::after {
+    content: ""; display: block; width: 14px; height: 14px; margin: 10px auto -2px;
+    border-right: 2px solid rgba(127,224,216,.6); border-bottom: 2px solid rgba(127,224,216,.6);
+    transform: rotate(45deg); grid-column: 1 / -1;
+  }
+  .col-hub::after { margin: 8px auto 0; }
+  .hub { width: 100%; max-width: 280px; }
+  .node { font-size: .88rem; padding: 9px 11px; }
   .hv-hospitality .media-float.f1 { left: 6px; bottom: 70px; }
   .hv-hospitality .media-float.f2 { right: 6px; }
 }
