@@ -612,7 +612,9 @@ section { padding-block: var(--section-pad); position: relative; }
 
 @media (max-width: 920px) {
   .nav-desktop { display: none; }
-  .header-cta .btn-call-header { display: none; }
+  /* when the hamburger appears, the CTA lives inside the drawer + the sticky bar,
+     so hide all inline header buttons to prevent header overflow on phones */
+  .header-cta .btn { display: none; }
   .hamburger { display: flex; }
 }
 
@@ -653,7 +655,6 @@ section { padding-block: var(--section-pad); position: relative; }
 }
 
 @media (max-width: 420px) {
-  .header-cta .btn { display: none; }
   .hero h1 { font-size: 2rem; }
   .dash-stats { grid-template-columns: 1fr 1fr; }
   .dash-stat:last-child { grid-column: span 2; }
